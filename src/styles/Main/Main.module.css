@@ -394,6 +394,7 @@
 @media (max-width: 600px) {
   .GridBoxes .SectionPage p {
     font-size: 3.5vw;
+    font-weight: 100 !important;
   }
 }
 
@@ -413,6 +414,12 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 600px) {
+  .SectionPageImg1 {
+    padding-bottom: 1;
+  }
 }
 
 .SectionPageImg1 .ExcludeInfo {

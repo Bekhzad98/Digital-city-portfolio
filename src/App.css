@@ -52,10 +52,10 @@ body {
 
 
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
  
   .Buttons {
-      font-size: 1vw !important;
+      font-size: 2vw !important;
       
   }
   .ButtonDiv {
