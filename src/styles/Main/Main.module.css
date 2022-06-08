@@ -601,6 +601,12 @@
   }
 }
 
+@media (max-width: 400px) {
+  .AddresPage {
+    border: 1px solid red;
+  }
+}
+
 .AddresPage .LeftSocial {
   width: 50%;
 }

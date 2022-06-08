@@ -45,9 +45,9 @@ function App() {
       <Routes defaultRouteName='/home'>
         <Route path='/home' element={<Home/>}/>
       </Routes>
-      <Navigation/>
+      {/* <Navigation/> */}
     </>
-  );
+  )
 }
 
 export default App;

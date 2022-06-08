@@ -4,7 +4,7 @@
     display: flex;
     gap: 10px;
     align-items: center;
-    position: relative;
+    /* position: relative; */
 }
 .SwiperDiv img {
     width: 65%;
@@ -25,12 +25,14 @@
 
     .SwiperDiv p {
         text-align: center;
-        height: 120px;
+        height: 150px;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         line-height: 10px;
         width: 100%;
-        font-size: 2vw;
+        font-size: 14px;
+        font-weight: 100;
+        line-height: 15px;
     }
   }
 
