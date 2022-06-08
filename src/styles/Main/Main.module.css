@@ -30,7 +30,6 @@
   .SectionAppSmall {
     padding: 1vw 0;
     height: 30 !important;
-    border: 1px solid rebeccapurple;
   }
 }
 
@@ -180,6 +179,12 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 600px) {
+  .TitleDiv {
+    font-size: 11vw;
+  }
+}
+
 .TitleDiv h2 {
   position: absolute;
   font-size: 3vw;
@@ -188,6 +193,12 @@
   color: #fff;
   bottom: 2vw;
   text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .TitleDiv h2 {
+    font-size: 5vw;
+  }
 }
 
 .GridBox {
@@ -380,6 +391,12 @@
   }
 }
 
+@media (max-width: 600px) {
+  .GridBoxes .SectionPage p {
+    font-size: 3.5vw;
+  }
+}
+
 .SectionPageImg1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -485,7 +502,6 @@
       -ms-flex-align: center;
           align-items: center;
   height: 22vw;
-  border: 1px solid red;
 }
 
 @media (max-width: 1200px) {

@@ -13,7 +13,7 @@
 
 .NavbarBg {
     height: 90px;
-    background: #6C63FF;
+    background: #3b369e;
     z-index: 99;
 }
 
@@ -104,6 +104,12 @@ ul li {
     }
 }
 @media (max-width: 650px) {
+    .Navbar {
+        height: 80px;
+    }
+    .NavbarBg {
+        height: 80px;
+    }
     ul {
         display: none;
     }

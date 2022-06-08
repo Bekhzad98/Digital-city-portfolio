@@ -19,7 +19,6 @@
     @media (max-width: 600px) {
         padding: 1vw 0;
         height: 30!important;
-        border: 1px solid rebeccapurple;
     }
 
     @media (max-width: 900px) {
@@ -128,6 +127,10 @@
     align-items: center;
     text-transform: uppercase;
 
+    @media (max-width: 600px) {
+        font-size: 11vw;
+    }
+
     h2 {
         position: absolute;
         font-size: 3vw;
@@ -136,6 +139,10 @@
         color: #fff;
         bottom: 2vw;
         text-transform: uppercase;
+
+        @media (max-width: 600px) {
+            font-size: 5vw;
+        }
     }
 }
 
@@ -277,6 +284,9 @@
                 text-align: center;
                 height: auto;
             }   
+            @media (max-width: 600px){
+                font-size: 3.5vw;
+            }
         }
     }
            
@@ -360,7 +370,6 @@
     justify-content: center;
     align-items: center;
     height: 22vw;
-    border: 1px solid red;
     
     @media (max-width: 900px) {
         // padding: 3vw;
