@@ -13,7 +13,7 @@
 
 .NavbarBg {
     height: 90px;
-    background: #3b369e;
+    background: #181828;
     z-index: 99;
 }
 
@@ -35,7 +35,7 @@ ul {
 ul li {
     list-style: none;
 }
-.Links {
+.Linked {
     text-decoration: none;
     color: #fff;
     transition: 0.5s;
@@ -80,8 +80,8 @@ ul li {
         font-size: 14px;
     }
 }
-@media (max-width: 1150px) {
-    .Links {
+@media (max-width: 1250px) {
+    .Linked {
         font-size: 10px;
     }
 }

@@ -431,15 +431,17 @@
         gap: 70px;
         padding: 5% 0;
     }
-    @media (max-width: 400px){
-        border: 1px solid red;
-    }
+   
 
     .LeftSocial {
         width: 50%;
 
         @media (max-width: 900px) {
             width: 40%;
+        }
+        @media (max-width: 500px) {
+            width: 65%;
+            height: auto;
         }
 
         .Social {
@@ -452,6 +454,10 @@
                 h1{
                     font-size: 1.5vw;
                     margin-bottom: 5px;
+                    @media (max-width: 600px) {
+                        font-size: 2.5vw;
+                        font-weight: 100;
+                    }
                 }
                 
                 h3 {
@@ -459,7 +465,7 @@
                     font-size: 1vw;
 
                     @media (max-width: 600px) {
-                        font-size: 2vw;
+                        font-size: 2.5vw;
                         font-weight: 100;
                     }
                 }
@@ -481,6 +487,11 @@
         @media (max-width: 900px) {
             width: 40%;
             height: auto;
+        }
+        @media (max-width: 500px) {
+            width: 65%;
+            height: auto;
+            padding: 1rem 2rem;
         }
 
         h1 {

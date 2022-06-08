@@ -6,11 +6,11 @@ import Logo from '../../assets/images/Logo.svg'
 import { NavLink } from 'react-router-dom'
 import Select from './Select'
 import Driver from './Driver'
+import { Link } from '../../data/MainData'   
 
 const Navbar = (props) => {
   
   
-    const Link = ['ASOSIY','TEXNOPARK',"IT TA’LIM",'STARTAPLAR','LOYIHALAR','RAQAMLASHTIRISH','BIZNES','INFRATUZILMA']
 
     // console.log(scroll)
   return (
@@ -21,7 +21,7 @@ const Navbar = (props) => {
        <ul>
            {
              Link.map((el, index)  =>( 
-                    <li key={index} ><NavLink className={style.Links} to={'/home'}>{el}</NavLink></li>
+                    <li key={index} ><NavLink className={style.Linked} to={el.links}>{el.title}</NavLink></li>
             ))}
        </ul>
        <div className={style.SelectDiv}>

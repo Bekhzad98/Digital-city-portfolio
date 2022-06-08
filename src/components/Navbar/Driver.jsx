@@ -10,6 +10,8 @@ import { NavLink } from 'react-router-dom';
 // import {Linked} from './style'
 import Call from '../../assets/images/Call.svg'
 
+import { Link } from '../../data/MainData';
+
 export default function SwipeableTemporaryDrawer() {
   const [state, setState] = React.useState({
     top: false,
@@ -51,11 +53,11 @@ export default function SwipeableTemporaryDrawer() {
     
     }}>
         
-        {['Asosiy', 'Texnopark', 'It Talim', 'Startaplar','Loyihalar','Raqamlashtirish','Biznes', 'Infratuzilma'].map((text, index) => (
-          <ListItem key={text} disablePadding>
+        {Link.map((item, index) => (
+          <ListItem key={index} disablePadding>
             <ListItemButton>
               <div className='DriverContainer'> 
-                {/* <Linked activeClassName="active" to={'/home'}>{text}</Linked> */}
+                <NavLink activeClassName="active" to={item.links}>{item.title}</NavLink>
                 
               </div>
             </ListItemButton>
