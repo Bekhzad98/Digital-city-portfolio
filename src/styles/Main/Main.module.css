@@ -1,0 +1,662 @@
+.Container {
+  width: 100%;
+  padding: 2% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.SectionAppSmall {
+  width: 100% !important;
+  height: auto !important;
+  color: #fff !important;
+  padding: 0 5vw;
+}
+
+@media (max-width: 400px) {
+  .SectionAppSmall {
+    height: auto !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .SectionAppSmall {
+    padding: 1vw 0;
+    height: 30 !important;
+    border: 1px solid rebeccapurple;
+  }
+}
+
+@media (max-width: 900px) {
+  .SectionAppSmall {
+    position: relative;
+    height: auto !important;
+    margin: 3vw 0;
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .SectionAppSmall {
+    height: auto;
+  }
+}
+
+.SectionAppDigital {
+  width: 100% !important;
+  height: 100vh;
+  color: #fff;
+  padding: 0 5vw;
+}
+
+@media (max-width: 400px) {
+  .SectionAppDigital {
+    height: 60vh !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .SectionAppDigital {
+    padding: 1vw 0;
+    height: 75vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .SectionAppDigital {
+    position: relative;
+    height: 85vh;
+  }
+}
+
+@media (max-width: 1150px) {
+  .SectionAppDigital {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 1250px) {
+  .SectionAppDigital {
+    height: 80vh;
+  }
+}
+
+.SectionApp {
+  width: 100% !important;
+  height: 100vh;
+  color: #fff;
+  padding: 0 5vw;
+}
+
+@media (max-width: 400px) {
+  .SectionApp {
+    height: 40vh !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .SectionApp {
+    padding: 1vw 0;
+    height: 75vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .SectionApp {
+    position: relative;
+    height: 85vh;
+  }
+}
+
+@media (max-width: 1150px) {
+  .SectionApp {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 1250px) {
+  .SectionApp {
+    height: 80vh;
+  }
+}
+
+.Section {
+  width: 100%;
+  height: auto;
+  color: #fff;
+  position: relative;
+  padding: 0 5vw;
+  margin-bottom: 3vw;
+}
+
+@media (max-width: 600px) {
+  .Section {
+    padding: 10vw 0;
+    height: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .Section {
+    height: auto;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .Section {
+    height: auto;
+  }
+}
+
+@media (max-width: 1250px) {
+  .Section {
+    height: auto;
+  }
+}
+
+.TitleDiv {
+  font-size: 8vw;
+  font-weight: 200;
+  position: relative;
+  text-align: center;
+  color: #FFFFFF0A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+}
+
+.TitleDiv h2 {
+  position: absolute;
+  font-size: 3vw;
+  font-weight: 100;
+  margin: auto;
+  color: #fff;
+  bottom: 2vw;
+  text-transform: uppercase;
+}
+
+.GridBox {
+  padding: 30px 10%;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .GridBox {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 900px) {
+  .GridBox {
+    padding: 0 5%;
+  }
+}
+
+.GridBox .Cart {
+  height: 200px;
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .GridBox .Cart {
+    height: 180px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .GridBox .Cart {
+    margin: 0;
+  }
+}
+
+.GridBox .Cart div span {
+  width: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3vw;
+  font-weight: 500;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .GridBox .Cart div span {
+    width: 15vw;
+  }
+}
+
+.GridBox .Cart div span .AddIcon {
+  position: absolute;
+  width: 1.5vw;
+  right: 5.5vw;
+  top: .3vw;
+}
+
+@media (max-width: 600px) {
+  .GridBox .Cart div span .AddIcon {
+    width: 2.5vw;
+    right: 7.3vw !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .GridBox .Cart div span .AddIcon {
+    width: 2.5vw;
+    right: 2.5vw;
+  }
+}
+
+.GridBox .Cart div span img {
+  width: 5vw;
+}
+
+@media (max-width: 600px) {
+  .GridBox .Cart div span img {
+    width: 8vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .GridBox .Cart div span img {
+    width: 5vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .GridBox .Cart div span img {
+    width: 7vw;
+  }
+}
+
+.GridBox .Cart h1 {
+  width: 12vw;
+  font-size: 1.2vw;
+  font-weight: 500;
+  margin-top: 1vh;
+}
+
+@media (max-width: 600px) {
+  .GridBox .Cart h1 {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .GridBox .Cart h1 {
+    font-size: 2.2vw;
+  }
+}
+
+.SectionPageSwiper {
+  height: 10vw;
+}
+
+.SectionPageSwiper .SectionDescription {
+  text-align: center;
+  padding: 0 10vw;
+  font-size: 1.5vw;
+  line-height: 2.5vw;
+  font-weight: 100 !important;
+  padding-top: 1vw;
+  height: 25vw;
+}
+
+@media (max-width: 900px) {
+  .SectionPageSwiper .SectionDescription {
+    padding: 0 10%;
+    font-size: 2vw;
+    line-height: 3.5vw;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .GridBoxes {
+    padding: 5vw 0;
+  }
+}
+
+.GridBoxes .SectionPage {
+  height: 100% !important;
+}
+
+.GridBoxes .SectionPage p {
+  font-size: 1.5vw;
+  line-height: 2.5vw;
+  font-weight: 100 !important;
+  padding-top: 1vw;
+  height: 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+  .GridBoxes .SectionPage p {
+    padding: 0 10%;
+    font-size: 1.7vw;
+    line-height: 3.5vw;
+    text-align: center;
+    height: auto;
+  }
+}
+
+.SectionPageImg1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 22vw;
+  position: relative;
+  background: url(../../assets//images/Main/Exclude.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.SectionPageImg1 .ExcludeInfo {
+  position: absolute;
+  top: 2.5vw;
+  left: 6.3vw;
+  font-size: 1.5vw;
+}
+
+@media (max-width: 600px) {
+  .SectionPageImg1 .ExcludeInfo {
+    left: 31.3vw !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .SectionPageImg1 .ExcludeInfo {
+    left: 26.3vw;
+  }
+}
+
+.SectionPageImg1 .ExcludeInfo2 {
+  position: absolute;
+  font-size: 1.5vw;
+  top: 2.5vw;
+  right: 14vw;
+}
+
+@media (max-width: 600px) {
+  .SectionPageImg1 .ExcludeInfo2 {
+    right: 39vw !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .SectionPageImg1 .ExcludeInfo2 {
+    right: 34.3vw;
+  }
+}
+
+.SectionPageImg1 .ExcludeInfo3 {
+  position: absolute;
+  bottom: 3.5vw;
+  left: 13.2vw;
+  font-size: 1.5vw;
+}
+
+@media (max-width: 600px) {
+  .SectionPageImg1 .ExcludeInfo3 {
+    left: 38.5vw !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .SectionPageImg1 .ExcludeInfo3 {
+    left: 33.5vw;
+  }
+}
+
+.SectionPageImg1 .ExcludeInfo4 {
+  position: absolute;
+  bottom: 2.5vw;
+  right: 6.5vw;
+  font-size: 1.5vw;
+}
+
+@media (max-width: 600px) {
+  .SectionPageImg1 .ExcludeInfo4 {
+    right: 31.3vw !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .SectionPageImg1 .ExcludeInfo4 {
+    right: 26.3vw;
+  }
+}
+
+.SectionPageImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 22vw;
+  border: 1px solid red;
+}
+
+@media (max-width: 1200px) {
+  .SectionPageImg {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .SectionPageImg {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 900px) {
+  .SectionPageImg {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0 2vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .SectionPageImg {
+    height: 30vh;
+  }
+}
+
+.SectionPageImg img {
+  height: 20vw;
+}
+
+@media (max-width: 1200px) {
+  .SectionPageImg img {
+    height: 33vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .SectionPageImg img {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .SectionPageImg img {
+    height: 25vh;
+  }
+}
+
+.AddresPage {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2% 5%;
+  margin: 2vw 0;
+}
+
+@media (max-width: 900px) {
+  .AddresPage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 70px;
+    padding: 5% 0;
+  }
+}
+
+.AddresPage .LeftSocial {
+  width: 50%;
+}
+
+@media (max-width: 900px) {
+  .AddresPage .LeftSocial {
+    width: 40%;
+  }
+}
+
+.AddresPage .LeftSocial .Social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.AddresPage .LeftSocial .Social span h1 {
+  font-size: 1.5vw;
+  margin-bottom: 5px;
+}
+
+.AddresPage .LeftSocial .Social span h3 {
+  font-weight: 200;
+  font-size: 1vw;
+}
+
+@media (max-width: 600px) {
+  .AddresPage .LeftSocial .Social span h3 {
+    font-size: 2vw;
+    font-weight: 100;
+  }
+}
+
+.AddresPage .RightLogin {
+  width: 35%;
+  background-color: #FFFFFF1A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 2vw 4vw;
+  border-radius: 1.5vw;
+}
+
+@media (max-width: 900px) {
+  .AddresPage .RightLogin {
+    width: 40%;
+    height: auto;
+  }
+}
+
+.AddresPage .RightLogin h1 {
+  font-size: 2vw;
+}
+
+.AddresPage .RightLogin input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #CCCCCC;
+  outline: none;
+  padding: 10px 0;
+  font-size: 1vw;
+  color: #fff;
+}
+
+.AddresPage .RightLogin textarea {
+  width: 100%;
+  height: 10vw;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #CCCCCC;
+  background: transparent;
+  padding: 10px 0;
+  color: #fff;
+  font-size: 1vw;
+}
+/*# sourceMappingURL=Main.module.css.map */

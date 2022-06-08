@@ -1,0 +1,114 @@
+.Navbar{
+    height: 130px;
+    width: 100%;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    transition: 0.4s ease-in;
+    /* overflow: hidden; */
+    z-index: 1000;
+}
+
+.NavbarBg {
+    height: 90px;
+    background: #6C63FF;
+    z-index: 99;
+}
+
+.Logo {
+    width: 10% !important;
+}
+.Logo img {
+    width: 100%;
+}
+
+
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    width: 80%;
+}
+ul li {
+    list-style: none;
+}
+.Links {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+
+}
+
+.SelectDiv {
+    display: block;
+    padding-right: 8px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+}
+.SelectDiv select {
+    background: transparent;
+    border: none;
+    padding: 3px 10px; 
+    color: #fff;
+    font-size: 1vw;
+    outline: none;
+}
+.SelectDiv select option{
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 2px 5px; 
+    color: #000;
+}
+.Drivers {
+    display: none;
+}
+/* @media (min-width: 1550px) {
+    .Links {
+        font-size: 1vw;
+    }
+    .Logo {
+        width: 30% !important;
+    }
+} */
+
+@media (max-width: 1250px) {
+    .Links {
+        font-size: 14px;
+    }
+}
+@media (max-width: 1150px) {
+    .Links {
+        font-size: 10px;
+    }
+}
+@media (max-width: 920px) {
+    ul li:nth-child(6),
+    ul li:nth-child(5) {
+        display: none;
+    }
+    ul li {
+        font-size: 13px;
+    }
+    ul {
+        display: none;
+    }
+    .Drivers {
+        display: block;
+    }
+    .SelectDiv {
+        display: none;
+    }
+}
+@media (max-width: 650px) {
+    ul {
+        display: none;
+    }
+    .Drivers {
+        display: block;
+    }
+   
+}

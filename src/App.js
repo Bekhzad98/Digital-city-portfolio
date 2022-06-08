@@ -1,23 +1,43 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
+import { useNavigate, Route, Routes } from 'react-router-dom';
 import './App.css';
 
+//components
+import Home from './components/Home/Home'
+import Navbar from './components/Navbar/Navbar'
+
+
 function App() {
+  const [scroll, setScroll] = useState(false);
+  
+  const ChangeColor = () => {
+    console.log(window.scrollY)
+    if(window.scrollY >= 50){
+        setScroll(true)
+      }else{
+        setScroll(false)
+      }
+  }
+
+  let navigate = useNavigate()
+  useEffect(() => {
+    navigate('/home')
+
+    window.addEventListener('scroll', ChangeColor, true)
+    return () => {
+        window.removeEventListener('scroll', ChangeColor)
+    }
+
+  }, [])
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='AppContainers'>
+      <Navbar scroll={scroll}/>
+      <Routes defaultRouteName='/home'>
+        <Route path='/home' element={<Home/>}/>
+      </Routes>
     </div>
   );
 }

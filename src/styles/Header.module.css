@@ -1,0 +1,108 @@
+.Container {
+    width: 100%;
+    height: 100vh;
+    padding: 10% 5%;
+    padding-bottom: 2%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: calc(5% + 2vw);
+    /* background: url(../assets//images/DC.svg); */
+
+}
+
+.Items {  
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+}
+.Title {
+    font-size: 8vw;
+    font-weight: 300;
+}
+
+.PlayMovie {
+    width: 8vw;
+    height: 8vw;
+    background-color: #6C63FF26;
+    border-radius: 50%;
+    padding: 1.2vw;   
+}
+.PlayMovie:hover {
+    transform: scale(1.05);
+    transition-duration: .5s;
+    box-shadow: 0 0 50px 0 #33b3aacc;
+}
+.PlayMovie span {
+    background-color: #FFFFFF4D;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+.PlaySwiper {
+    width: 3vw;
+    height: 10vw;
+    background-color: rgba(95, 94, 94, 0.324);
+    /* margin-left: 20vh; */
+    position: absolute;
+    right: 0;
+}
+
+
+@media (max-width: 650px) {
+    .Container {
+        padding-top: 15%;
+        height: auto;
+    }
+    .Title {
+        font-size: 8vw !important;
+        padding-top: 30px;
+        text-align: center;
+    }
+   
+    .Buttons {
+        font-size: 15px !important;
+    }
+    .ButtonDiv {
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
+@media (max-width: 900px) {
+    .Title {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .Items   {
+        margin-top: 10vw;
+    }
+    .PlayMovie {
+        width: 13vw;
+        height: 13vw;
+        padding: 2vw;
+    }
+    .Container {
+        height: auto;
+    }
+    .Buttons {
+        font-size: 1rem !important;
+    }
+    .ButtonDiv {
+        display: flex !important;
+        justify-content: center !important;
+        margin-top: 15vw;
+    }
+}
+@media (max-width: 1200px) {
+    .Container {
+        height: 65vh !important;
+    }
+}
