@@ -36,7 +36,7 @@ const Header = () => {
             <div className={style.Items}>
                 <div className={style.PlayMovie}>
                         <span>
-                            <Play sx={{fontSize: '4vw'}}/>
+                            <Play className={style.PlayIcon} sx={{fontSize: '4vw'}}/>
                             
                         </span>
                 </div>
@@ -49,7 +49,7 @@ const Header = () => {
       </Grid>
 
       <Grid item className={style.ButtonDiv} xs={12} >
-            <Button className='Buttons'>Infratuzilma</Button>
+            <Button className={style.Buttons}>Infratuzilma</Button>
       </Grid>
       
     </div>

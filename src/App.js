@@ -2,9 +2,13 @@ import { useEffect, useState } from 'react';
 import { useNavigate, Route, Routes } from 'react-router-dom';
 import './App.css';
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 //components
 import Home from './components/Home/Home'
 import Navbar from './components/Navbar/Navbar'
+import Navigation from './components/NavigationMenu/Navigation';
 
 
 function App() {
@@ -23,6 +27,9 @@ function App() {
   useEffect(() => {
     navigate('/home')
 
+    AOS.init();
+    AOS.refresh();
+
     window.addEventListener('scroll', ChangeColor, true)
     return () => {
         window.removeEventListener('scroll', ChangeColor)
@@ -33,12 +40,13 @@ function App() {
 
 
   return (
-    <div className='AppContainers'>
+    <>
       <Navbar scroll={scroll}/>
       <Routes defaultRouteName='/home'>
         <Route path='/home' element={<Home/>}/>
       </Routes>
-    </div>
+      <Navigation/>
+    </>
   );
 }
 

@@ -55,12 +55,31 @@
     position: absolute;
     right: 0;
 }
+.Buttons {
+    color: #fff !important;
+    padding: 0.5vw 2vw !important;
+    border: 1px solid #fff !important;
+    border-radius: 50px !important;
+    text-transform: capitalize !important;
+    font-size: 1vw !important;
+   
+  }
 
 
 @media (max-width: 650px) {
     .Container {
         padding-top: 15%;
-        height: auto;
+        height: auto !important;
+    }
+    .PlayMovie {
+        width: 20vw !important;
+        height: 20vw !important;
+        margin-top: 10vw;
+        padding: 3vw !important;
+    }
+
+    .PlayMovie .PlayIcon {
+        font-size: 10vw !important;
     }
     .Title {
         font-size: 8vw !important;
@@ -69,7 +88,8 @@
     }
    
     .Buttons {
-        font-size: 15px !important;
+        font-size: 2vw !important;
+        
     }
     .ButtonDiv {
         display: flex !important;
@@ -103,6 +123,9 @@
 }
 @media (max-width: 1200px) {
     .Container {
-        height: 65vh !important;
+        height: auto !important;
+    }
+    .ButtonDiv {
+        margin-top: 100px !important;
     }
 }

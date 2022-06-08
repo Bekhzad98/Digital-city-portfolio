@@ -24,7 +24,7 @@
     @media (max-width: 900px) {
        position: relative;
        height: auto !important;
-       margin: 3vw 0 ;
+       margin: 3vw 0;
         padding-bottom: 100px;
     }
 
@@ -52,7 +52,7 @@
     }
     @media (max-width: 900px) {
        position: relative;
-       height: 85vh;
+       height: 95vh;
         
     }
     @media (max-width: 1150px) {
@@ -135,7 +135,7 @@
         position: absolute;
         font-size: 3vw;
         font-weight: 100;
-        margin: auto;
+        margin: 0;
         color: #fff;
         bottom: 2vw;
         text-transform: uppercase;
@@ -201,8 +201,12 @@
                         right: 7.3vw !important;
                       }
                       @media (max-width: 900px) {
+                        width: 1.5vw;
+                        left: 3vw;
+                      }
+                      @media (max-width: 400px) {
                         width: 2.5vw;
-                        right: 2.5vw;
+                        left: 4vw;
                       }
                 }
 
@@ -276,16 +280,17 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+          
  
             @media (max-width: 900px) {
                 padding: 0 10%;
                 font-size: 1.7vw;
                 line-height: 3.5vw;
-                text-align: center;
+                text-align: center !important;
                 height: auto;
             }   
             @media (max-width: 600px){
-                font-size: 3.5vw;
+                font-size: 2.5vw;
                 font-weight: 100 !important;
             }
         }
@@ -412,6 +417,7 @@
 
 .AddresPage {
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -423,6 +429,9 @@
         align-items: center;
         gap: 70px;
         padding: 5% 0;
+    }
+    @media (max-width: 400px){
+        
     }
 
     .LeftSocial {
