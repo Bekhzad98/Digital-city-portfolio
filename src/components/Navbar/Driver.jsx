@@ -62,8 +62,10 @@ export default function SwipeableTemporaryDrawer() {
           </ListItem>
         ))}
         </div>
-        <div data-aos="zoom-in-right"
-              data-aos-duration="1000" className={style.DriverCall}>
+        <div  data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="top-bottom"
+              className={style.DriverCall}>
             <Call className={style.DriverCall_Icon}/>
             <p>1227</p>
             

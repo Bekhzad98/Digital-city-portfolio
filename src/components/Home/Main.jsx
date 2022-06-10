@@ -19,8 +19,9 @@ import Exclude from '../../assets/images/Main/Exclude.png'
 
 
 
+
 const Main = () => {
-    const [color, setColor] = useState(false)
+ 
 
 
   return (

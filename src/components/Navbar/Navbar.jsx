@@ -9,6 +9,16 @@ import Driver from './Driver'
 import { Link } from '../../data/MainData'   
 
 const Navbar = (props) => {
+  useEffect(() => {
+    fetch('http://167.99.214.82/get-info/')
+    .then((response)=> {
+        return response.json();
+    })
+    .then((datas)=> {
+        console.log(datas)
+    })
+  
+}, [])
   
   
 
