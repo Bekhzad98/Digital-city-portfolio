@@ -46,14 +46,15 @@ export default function SwipeableTemporaryDrawer() {
       <div className={style.DriverLogo}>
         <video src={MovieLogo} autoPlay loop></video>
         <span>Digital City</span>
-        <p></p>
+        
       </div>
 
         <div className={style.DriverList}>
         {Link.map((item, index) => (
           <ListItem key={index} disablePadding>
             <ListItemButton>
-              <div className='DriverContainer'> 
+              <div data-aos="zoom-in-right"
+              data-aos-duration="1000" className='DriverContainer'> 
                 <NavLink className={style.DriverLinks} activeClassName="active" to={item.links}>{item.title}</NavLink>
                 
               </div>
@@ -61,7 +62,8 @@ export default function SwipeableTemporaryDrawer() {
           </ListItem>
         ))}
         </div>
-        <div className={style.DriverCall}>
+        <div data-aos="zoom-in-right"
+              data-aos-duration="1000" className={style.DriverCall}>
             <Call className={style.DriverCall_Icon}/>
             <p>1227</p>
             
