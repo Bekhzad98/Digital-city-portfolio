@@ -15,7 +15,7 @@ function App() {
   const [scroll, setScroll] = useState(false);
   
   const ChangeColor = () => {
-    console.log(window.scrollY)
+    // console.log(window.scrollY)
     if(window.scrollY >= 50){
         setScroll(true)
       }else{
@@ -24,6 +24,7 @@ function App() {
   }
 
   let navigate = useNavigate()
+
   useEffect(() => {
     navigate('/home')
 

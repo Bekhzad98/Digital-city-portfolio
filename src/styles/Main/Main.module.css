@@ -701,6 +701,20 @@
   color: #fff;
 }
 
+@media (max-width: 900px) {
+  .AddresPage .RightLogin input {
+    font-size: 2vw;
+    font-weight: 100;
+  }
+}
+
+@media (max-width: 600px) {
+  .AddresPage .RightLogin input {
+    font-size: 3vw;
+    font-weight: 100;
+  }
+}
+
 .AddresPage .RightLogin textarea {
   width: 100%;
   height: 10vw;
@@ -711,5 +725,21 @@
   padding: 10px 0;
   color: #fff;
   font-size: 1vw;
+}
+
+@media (max-width: 900px) {
+  .AddresPage .RightLogin textarea {
+    font-size: 2vw;
+    font-weight: 100;
+    height: 15vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .AddresPage .RightLogin textarea {
+    height: 20vw;
+    font-size: 3vw;
+    font-weight: 100;
+  }
 }
 /*# sourceMappingURL=Main.module.css.map */

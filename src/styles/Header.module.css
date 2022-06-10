@@ -8,44 +8,83 @@
     flex-direction: column;
     justify-content: space-between;
     padding-left: calc(5% + 2vw);
-    /* background: url(../assets//images/DC.svg); */
-
 }
 
 .Items {  
-    height: 100%;
+    height: 20vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+}
 
+.Swipers {
+    width: 100% !important;
+    height: 100% !important; 
+    transition: 1s !important;
+  }
+  
+  .Swiper_slide {
+    height: 100% !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    position: relative !important;
+    transition: .7s !important;
+  }
+  .MovieCard {
+      position: absolute !important;
+      width: 50%;
+      left: 45% ;
+      top: 10vw ;
+      border: none !important;
+  }
 
+  .SwiperItem {
+      width: 100%;
+  }
+  .PlayMovie {
+      width: 8vw;
+      height: 8vw;
+      background-color: #6C63FF26;
+      border-radius: 50%;
+      padding: 1.2vw; 
+      position: absolute; 
+      z-index: 300; 
+      /* top: 5vw; */
+      animation: pulse 1500ms infinite;
+      cursor: pointer;
+  }
+  .PlayMovie:hover {
+      transform: scale(1.05);
+      transition-duration: .5s;
+      box-shadow: 0 0 50px 0 #33b3aacc;
+  }
+  .PlayMovie span {
+      background-color: #FFFFFF4D;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100%;
+  }
+  @keyframes pulse {
+      0% {
+          box-shadow: #6C63FF26 0 0 0 0;
+      }
+      100% {
+          box-shadow: #ff69b400 0 0 0 26px;
+      }
+  }
+.Movies {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .Title {
     font-size: 8vw;
     font-weight: 300;
-}
-
-.PlayMovie {
-    width: 8vw;
-    height: 8vw;
-    background-color: #6C63FF26;
-    border-radius: 50%;
-    padding: 1.2vw;   
-}
-.PlayMovie:hover {
-    transform: scale(1.05);
-    transition-duration: .5s;
-    box-shadow: 0 0 50px 0 #33b3aacc;
-}
-.PlayMovie span {
-    background-color: #FFFFFF4D;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100%;
 }
 .PlaySwiper {
     width: 3vw;
@@ -62,9 +101,7 @@
     border-radius: 50px !important;
     text-transform: capitalize !important;
     font-size: 1vw !important;
-   
   }
-
 
 @media (max-width: 650px) {
     .Container {
@@ -95,6 +132,9 @@
         display: flex !important;
         justify-content: center !important;
     }
+    .MovieCard {
+        top: 45vw !important;
+    }
 }
 @media (max-width: 900px) {
     .Title {
@@ -103,6 +143,7 @@
     }
     .Items   {
         margin-top: 10vw;
+        margin-bottom: 10vw;
     }
     .PlayMovie {
         width: 13vw;
@@ -119,6 +160,11 @@
         display: flex !important;
         justify-content: center !important;
         margin-top: 15vw;
+    }
+    .MovieCard {
+        left: 15% ;
+        top: 25vw ;
+        width: 70% ;
     }
 }
 @media (max-width: 1200px) {

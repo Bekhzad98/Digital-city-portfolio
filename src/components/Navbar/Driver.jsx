@@ -7,8 +7,10 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { NavLink } from 'react-router-dom';
-// import {Linked} from './style'
-import Call from '../../assets/images/Call.svg'
+//imported
+import Call from '@mui/icons-material/Call';
+import MovieLogo from '../../assets/video/driwer2.mp4'
+import style from './Navbar.module.css'
 
 import { Link } from '../../data/MainData';
 
@@ -33,40 +35,34 @@ export default function SwipeableTemporaryDrawer() {
   };
 
   const list = (anchor) => (
-    <Box
+    <Box className={style.DriverBox}
       sx={{ 
-          width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 200 ,
-          background: '#8e8e8e8b',
-          height: '100%',
-          padding: '0',
-          margin: '0',
+          width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 200 
         }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-    <List sx={{
-      padding: 0,
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'space-between'
-    
-    }}>
-        
+      <div className={style.DriverLogo}>
+        <video src={MovieLogo} autoPlay loop></video>
+        <span>Digital City</span>
+        <p></p>
+      </div>
+
+        <div className={style.DriverList}>
         {Link.map((item, index) => (
           <ListItem key={index} disablePadding>
             <ListItemButton>
               <div className='DriverContainer'> 
-                <NavLink activeClassName="active" to={item.links}>{item.title}</NavLink>
+                <NavLink className={style.DriverLinks} activeClassName="active" to={item.links}>{item.title}</NavLink>
                 
               </div>
             </ListItemButton>
           </ListItem>
         ))}
-        
-      </List>
-        <div className='DriverCall'>
-            <img src={Call} alt="" />
+        </div>
+        <div className={style.DriverCall}>
+            <Call className={style.DriverCall_Icon}/>
             <p>1227</p>
             
         </div>
@@ -76,7 +72,7 @@ export default function SwipeableTemporaryDrawer() {
   return (
     <div>
       {['right'].map((anchor) => (
-        <React.Fragment key={anchor}>
+        <React.Fragment  key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}><MenuIcon sx={{color:'#fff',fontSize: '40px'}}/></Button>
           <SwipeableDrawer
             anchor={anchor}

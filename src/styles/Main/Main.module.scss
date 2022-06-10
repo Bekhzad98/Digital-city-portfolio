@@ -506,6 +506,15 @@
             padding: 10px 0;
             font-size: 1vw;
             color: #fff;
+
+            @media (max-width: 900px) {
+                font-size: 2vw;
+                font-weight: 100;
+            }
+            @media (max-width: 600px) {
+                font-size: 3vw;
+                font-weight: 100;
+            }
         }
         textarea {
             width: 100%;
@@ -517,6 +526,16 @@
             padding: 10px 0;
             color: #fff;
             font-size: 1vw;
+            @media (max-width: 900px) {
+                font-size: 2vw;
+                font-weight: 100;
+                height: 15vw;
+            }
+            @media (max-width: 600px) {
+                height: 20vw;
+                font-size: 3vw;
+                font-weight: 100;
+            }
         }
     }
 }

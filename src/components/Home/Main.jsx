@@ -32,7 +32,8 @@ const Main = () => {
                 TEXNOPARK
                 <h2>TEXNOPARK</h2>
             </span>
-                <Grid className={style.GridBox} container spacing={0} >
+                <Grid data-aos="zoom-in"
+                  data-aos-duration="1000" className={style.GridBox} container spacing={0} >
                     <Grid className={style.Cart} item  xs={6} sm={6} md={4} lg={4} xl={4}>
                         <div>
                             <span>
@@ -118,7 +119,8 @@ const Main = () => {
                     
                    
                 </Grid>
-                <Grid  item  style={{justifyContent: 'flex-end'}} className={style.SectionPageImg}  xs={12} sm={12} md={6} lg={6} xl={6}>
+                <Grid data-aos="zoom-in"
+                  data-aos-duration="1000"  item  style={{justifyContent: 'flex-end'}} className={style.SectionPageImg}  xs={12} sm={12} md={6} lg={6} xl={6}>
                   <img src={ItTalim} alt="" />
                 </Grid>                  
             </Grid>
@@ -131,7 +133,8 @@ const Main = () => {
                 <h2>STARTAPLAR</h2>
             </span>
             <Grid className={style.GridBoxes} container spacing={0} >
-                <Grid  item   className={style.SectionPageImg}  xs={12} sm={12} md={6} lg={6} xl={6}>
+                <Grid data-aos="zoom-in"
+                  data-aos-duration="1000"  item   className={style.SectionPageImg}  xs={12} sm={12} md={6} lg={6} xl={6}>
                   <img src={Startaplar} alt="" />
                 </Grid>
                 <Grid  item  className={style.SectionPage}  xs={12} sm={12} md={6} lg={6} xl={6}>
@@ -173,7 +176,8 @@ const Main = () => {
                         </Grid>
                     </p>   
                 </Grid>
-                <Grid  item  style={{justifyContent: 'flex-end'}} className={style.SectionPageImg}  xs={12} sm={12} md={6} lg={6} xl={6}>
+                <Grid data-aos="zoom-in"
+                  data-aos-duration="1000"  item  style={{justifyContent: 'flex-end'}} className={style.SectionPageImg}  xs={12} sm={12} md={6} lg={6} xl={6}>
                   <img src={KiberSport} alt="" />
                 </Grid>
             </Grid>
@@ -185,7 +189,8 @@ const Main = () => {
                 <h2>RAQAMLASHTIRISH</h2>
             </span>
             <Grid className={style.GridBoxes} container spacing={0} >
-                <Grid  item   className={style.SectionPageImg}  xs={12} sm={12} md={6} lg={6} xl={6}>
+                <Grid data-aos="zoom-in"
+                  data-aos-duration="1000" item   className={style.SectionPageImg}  xs={12} sm={12} md={6} lg={6} xl={6}>
                   <img src={Raqam} alt="" />
                 </Grid>
                 <Grid  item  className={style.SectionPage}  xs={12} sm={12} md={6} lg={6} xl={6}>
@@ -211,19 +216,21 @@ const Main = () => {
                         </Grid>
                     </p>   
                 </Grid>
-                <Grid  item  style={{justifyContent: 'flex-end'}}  className={style.SectionPageImg}  xs={12} sm={12} md={6} lg={6} xl={6}>
-                  <img src={Biznes} alt="" />
+                <Grid data-aos="zoom-in"
+                  data-aos-duration="1000"   item  style={{justifyContent: 'flex-end'}}  className={style.SectionPageImg}  xs={12} sm={12} md={6} lg={6} xl={6}>
+                  <img  src={Biznes} alt="" />
                 </Grid>
             </Grid>
         </div>  
-        <div className={style.SectionAppSmall}>
+        <div  className={style.SectionAppSmall}>
             <span data-aos="zoom-in"
                   data-aos-duration="1000" className={style.TitleDiv}>
                 INFRATUZILMA
                 <h2>INFRATUZILMA</h2>
             </span>
             <Grid  item  className={style.GridBoxes} container spacing={0} >
-                <Grid  item   className={style.SectionPageImg1}  xs={12} sm={12} md={6} lg={6} xl={6}>
+                <Grid data-aos="zoom-in"
+                  data-aos-duration="1000"  item   className={style.SectionPageImg1}  xs={12} sm={12} md={6} lg={6} xl={6}>
                   <span className={style.ExcludeInfo}>
                       <p>2019</p>
                       <h2>1Ta</h2>

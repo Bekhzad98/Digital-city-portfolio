@@ -86,10 +86,7 @@ ul li {
     }
 }
 @media (max-width: 920px) {
-    ul li:nth-child(6),
-    ul li:nth-child(5) {
-        display: none;
-    }
+  
     ul li {
         font-size: 13px;
     }
@@ -121,3 +118,80 @@ ul li {
     }
    
 }
+
+
+/*Driver style*/
+
+.DriverLinks {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+.DriverCall {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.DriverCall_Icon {
+    font-size: 4rem;
+    color: #fff;
+}
+.DriverCall p{
+    font-size: 30px;
+    color: #fff;
+}
+.DriverBox {
+    border: none;
+    background:  #181828;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.DriverList {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.DriverLogo {
+    width: 100%;
+    height: 12%;
+    position: relative;
+
+
+}
+.DriverLogo video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+.DriverLogo span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+    background-color: #000;
+    mix-blend-mode: multiply;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+/* .DriverLogo p {
+    position: absolute;
+    font-size: 2.5rem;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    text-align: end;
+    font-weight: 800;
+    background-color: #000;
+    padding-right: 40px;
+    color: #fff;
+    mix-blend-mode: multiply;
+} */
