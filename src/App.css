@@ -123,3 +123,24 @@ body {
 .swiper-autoplay {
   transition: 0.5s !important;
 }
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.228);
+	/* border-radius: 10px; */
+	/* background-color: #4f4b4b09; */
+}
+
+::-webkit-scrollbar
+{
+	width: 8px;
+  /* border-radius: 10px; */
+	background-color: rgba(35, 34, 34, 0.482);
+}
+
+::-webkit-scrollbar-thumb
+{
+	/* border-radius: 10px; */
+	/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
+	background-color: #4f4848;
+}

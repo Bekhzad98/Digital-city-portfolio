@@ -204,6 +204,7 @@
 .GridBox {
   padding: 30px 10%;
   width: 100%;
+  position: relative !important;
 }
 
 @media (max-width: 600px) {
@@ -215,6 +216,29 @@
 @media (max-width: 900px) {
   .GridBox {
     padding: 0 5%;
+  }
+}
+
+.GridBox .AddIcon {
+  position: relative !important;
+}
+
+@media (max-width: 600px) {
+  .GridBox .AddIcon {
+    width: 2.5vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .GridBox .AddIcon {
+    width: 1.5vw;
+    left: 20vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .GridBox .AddIcon {
+    width: 2.5vw;
   }
 }
 
@@ -249,11 +273,11 @@
   }
 }
 
-.GridBox .Cart div span {
+.GridBox .Cart span {
   width: 10vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -263,58 +287,35 @@
 }
 
 @media (max-width: 600px) {
-  .GridBox .Cart div span {
+  .GridBox .Cart span {
     width: 15vw;
   }
 }
 
-.GridBox .Cart div span .AddIcon {
-  position: absolute;
-  width: 1.5vw;
-  right: 5.5vw;
-  top: .3vw;
+.GridBox .Cart span p {
+  width: 15vw;
+  margin-left: 1vw;
 }
 
-@media (max-width: 600px) {
-  .GridBox .Cart div span .AddIcon {
-    width: 2.5vw;
-    right: 7.3vw !important;
-  }
-}
-
-@media (max-width: 900px) {
-  .GridBox .Cart div span .AddIcon {
-    width: 1.5vw;
-    left: 3vw;
-  }
-}
-
-@media (max-width: 400px) {
-  .GridBox .Cart div span .AddIcon {
-    width: 2.5vw;
-    left: 4vw;
-  }
-}
-
-.GridBox .Cart div span img {
+.GridBox .Cart span img {
   width: 5vw;
 }
 
 @media (max-width: 600px) {
-  .GridBox .Cart div span img {
-    width: 8vw;
+  .GridBox .Cart span img {
+    width: 9vw !important;
   }
 }
 
 @media (max-width: 900px) {
-  .GridBox .Cart div span img {
-    width: 5vw;
+  .GridBox .Cart span img {
+    width: 7vw;
   }
 }
 
 @media (max-width: 400px) {
-  .GridBox .Cart div span img {
-    width: 7vw;
+  .GridBox .Cart span img {
+    width: 8vw;
   }
 }
 
@@ -327,12 +328,14 @@
 
 @media (max-width: 600px) {
   .GridBox .Cart h1 {
-    font-size: 2vw;
+    width: 15vw;
+    font-size: 3vw !important;
   }
 }
 
 @media (max-width: 900px) {
   .GridBox .Cart h1 {
+    width: 10vw;
     font-size: 2.2vw;
   }
 }
@@ -416,11 +419,6 @@
       -ms-flex-align: center;
           align-items: center;
   height: 22vw;
-  position: relative;
-  background: url(../../assets//images/Main/Exclude.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 @media (max-width: 600px) {

@@ -2,31 +2,29 @@ import React, { useState ,useEffect} from 'react'
 import style from './Navbar.module.css'
 
 //Assets
-import Logo from '../../assets/images/Logo.svg'
+
 import { NavLink } from 'react-router-dom'
-import Select from './Select'
+// import Select from './Select'
 import Driver from './Driver'
 import { Link } from '../../data/MainData'   
+import axios from 'axios'
+
+//API
 
 const Navbar = (props) => {
+  const [data, setData] = useState({})
   useEffect(() => {
-    fetch('http://167.99.214.82/get-info/')
-    .then((response)=> {
-        return response.json();
-    })
-    .then((datas)=> {
-        console.log(datas)
+   axios.get('http://167.99.214.82/get-info/')
+   .then(res=>{
+     setData(res.data)
     })
   
 }, [])
-  
-  
 
-    // console.log(scroll)
   return (
     <nav className={[style.Navbar,props.scroll ? style.NavbarBg : ""].join(' ')}>
        <div className={style.Logo}>
-            <img src={Logo} alt="Logo" />
+            <img src={`http://167.99.214.82${data.logo}`} alt="Logo" />
        </div>
        <ul>
            {

@@ -7,8 +7,14 @@ import "aos/dist/aos.css";
 
 //components
 import Home from './components/Home/Home'
+import ItTalim from './components/It-Talim/Navbar/Navbar'
 import Navbar from './components/Navbar/Navbar'
-import Navigation from './components/NavigationMenu/Navigation';
+import Biznes from './components/Biznes/Biznes'
+import  Startaplar  from './components/Startaplar/Navbar';
+import Raqamlashtirish from './components/Raqamlashtirish/Raqamlashtirish'
+import Infrastructure from './components/Infratuzilma/infrastructuresComponents/infrastructure/Infrastructures'
+import Technopark from './components/Technopark/Container'
+// import Navigation from './components/NavigationMenu/Navigation';
 
 
 function App() {
@@ -24,8 +30,7 @@ function App() {
   }
 
   let navigate = useNavigate()
-
-  useEffect(() => {
+    useEffect(() => {
     navigate('/home')
 
     AOS.init();
@@ -38,13 +43,17 @@ function App() {
 
   }, [])
 
-
-
   return (
     <>
       <Navbar scroll={scroll}/>
       <Routes defaultRouteName='/home'>
         <Route path='/home' element={<Home/>}/>
+        <Route path='/it-talim' element={<ItTalim/>}/>
+        <Route path='/biznes' element={<Biznes/>}/>
+        <Route path='/startaplar' element={<Startaplar/>}/>
+        <Route path='/infratuzilma' element={<Infrastructure/>}/>
+        <Route path='/raqamlashtirish' element={<Raqamlashtirish/>}/>
+        <Route path='/texnopark' element={<Technopark/>}/>
       </Routes>
       {/* <Navigation/> */}
     </>

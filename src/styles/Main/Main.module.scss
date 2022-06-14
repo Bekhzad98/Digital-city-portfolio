@@ -150,6 +150,7 @@
 .GridBox {
     padding: 30px 10%;
     width: 100%;
+    position: relative !important;
     
     @media (max-width: 600px) {
        padding: 0 5%;
@@ -157,6 +158,26 @@
       @media (max-width: 900px) {
         padding: 0 5%;
       }
+
+      .AddIcon {
+        position: relative !important;
+        // width: 1.5vw;
+        // left: 8.5vw;
+        // bottom: 26.5rem;
+        @media (max-width: 600px) {
+            width: 2.5vw;
+            
+          }
+          @media (max-width: 900px) {
+            width: 1.5vw;
+            left: 20vw;
+            
+          }
+          @media (max-width: 400px) {
+            width: 2.5vw;
+            
+          }
+    }
     
     .Cart {
         height: 200px;
@@ -173,17 +194,9 @@
         @media (max-width: 900px) {
             margin: 0;
         }
-
-       
-
-         div{
-            @media (max-width: 600px) {
-                
-              }
-            
             span {
                 width: 10vw;
-                display: flex;
+                display: flex !important;
                 align-items: center;
                 font-size: 3vw;
                 font-weight: 500;
@@ -191,41 +204,27 @@
                 @media (max-width: 600px) {
                     width: 15vw;
                   }
-
-                .AddIcon {
-                    position: absolute;
-                    width: 1.5vw;
-                    right: 5.5vw;
-                    top: .3vw;
-                    @media (max-width: 600px) {
-                        width: 2.5vw;
-                        right: 7.3vw !important;
-                      }
-                      @media (max-width: 900px) {
-                        width: 1.5vw;
-                        left: 3vw;
-                      }
-                      @media (max-width: 400px) {
-                        width: 2.5vw;
-                        left: 4vw;
-                      }
+                p {
+                    width: 15vw;
+                    margin-left: 1vw;
                 }
+               
 
                 img {
                     width: 5vw;
                     @media (max-width: 600px) {
-                        width: 8vw;
+                        width: 9vw !important;
                       }
                       @media (max-width: 900px) {
-                        width: 5vw;
+                        width: 7vw;
                       }
                       @media (max-width: 400px) {
-                        width: 7vw;
+                        width: 8vw;
                       }
                    
                 }
             }
-        }
+     
   
         h1 {
             width: 12vw;
@@ -233,9 +232,11 @@
             font-weight: 500;
             margin-top: 1vh;
             @media (max-width: 600px) {
-               font-size: 2vw;
+                width: 15vw;
+               font-size: 3vw !important;
               }
               @media (max-width: 900px) {
+                width: 10vw;
                font-size: 2.2vw;
               }
         }
@@ -303,11 +304,11 @@
     justify-content: center;
     align-items: center;
     height: 22vw;
-    position: relative;
-    background: url(../../assets//images/Main/Exclude.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    // position: relative;
+    // background: url(../../assets//images/Main/Exclude.png);
+    // background-position: center;
+    // background-size: contain;
+    // background-repeat: no-repeat;
 
     @media (max-width: 600px) {
         padding-bottom: 1;

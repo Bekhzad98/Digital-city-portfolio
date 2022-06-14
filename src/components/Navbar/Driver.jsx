@@ -1,8 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
-import Button from '@mui/material/Button';
-import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -13,6 +11,7 @@ import MovieLogo from '../../assets/video/driwer2.mp4'
 import style from './Navbar.module.css'
 
 import { Link } from '../../data/MainData';
+import { Button } from '@mui/material';
 
 export default function SwipeableTemporaryDrawer() {
   const [state, setState] = React.useState({

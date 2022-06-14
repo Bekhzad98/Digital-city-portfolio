@@ -32,16 +32,16 @@ export const Link = [
     },
     {
         title:'IT TA’LIM',
-        links:"/ittalim"
+        links:"/it-talim"
     },
     {
         title:'STARTAPLAR',
         links:"/startaplar"
     },
-    {
-        title:'LOYIHALAR',
-        links:"/loyihalar"
-    },
+    // {
+    //     title:'LOYIHALAR',
+    //     links:"/loyihalar"
+    // },
     {
         title:'RAQAMLASHTIRISH',
         links:"/raqamlashtirish"
