@@ -29,7 +29,8 @@ export const Centerright = styled.div`
   transition: 1.3s;
   position: fixed;
   z-index: 1000;
-  right:0;
+  right:30px;
+  bottom: 30px;
   border-radius: 50px;
   width: 70px;
   height: 70px;

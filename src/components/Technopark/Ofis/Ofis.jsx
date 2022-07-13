@@ -44,10 +44,7 @@ const Ofis = () => {
   return (
     <Container bg={phone}>
 
-        <Contcenter  data-aos="flip-up"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="3000">
-
+        <Contcenter>
             <Centerdiv>
                 {
                   data?.map((item,index)=>{

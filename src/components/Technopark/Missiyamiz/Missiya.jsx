@@ -30,8 +30,8 @@ const Missiya = () => {
   return (
     <Container bg={phone}>
 
-      <Div data-aos="fade-up"
-     data-aos-duration="4000">
+      <Div
+     >
         <ContainCent >
             <Centerleft>
               <Centerh1> BIZNING MISSIYAMIZ </Centerh1>
