@@ -30,6 +30,7 @@ function App() {
   }
 
   let navigate = useNavigate()
+  
     useEffect(() => {
     navigate('/home')
 

@@ -87,6 +87,7 @@ export const Topp = styled.p`
     `
     export const Centerend = styled.div`
       width: 80%;
+      height: 200px;
       display: flex;
       justify-content: center;
       align-items:center;

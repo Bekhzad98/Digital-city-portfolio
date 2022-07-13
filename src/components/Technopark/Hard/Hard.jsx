@@ -3,8 +3,7 @@ import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-
-import {DIV} from './Hard.style'
+import style from './hard.module.css'
 
 // Import Swiper styles
 import "swiper/css";
@@ -28,6 +27,7 @@ export default function App() {
   return (
     <>
       <Swiper
+        className={style.swipers}
         slidesPerView={4}
         spaceBetween={25}
         freeMode={true}
@@ -35,24 +35,23 @@ export default function App() {
           clickable: true,
         }}
         modules={[FreeMode, Pagination]}
-        className="mySwiper"
       >
-        <SwiperSlide>
+        <SwiperSlide className={style.swiperSlides}>
             <img src={phone2} />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className={style.swiperSlides}>
             <img src={phone3} />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className={style.swiperSlides}>
             <img src={phone4} />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className={style.swiperSlides}>
             <img src={phone5} />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className={style.swiperSlides}>
             <img src={phone6} />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className={style.swiperSlides}>
             <img src={phone7} />
         </SwiperSlide>
 
